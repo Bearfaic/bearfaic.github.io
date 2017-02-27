@@ -56,6 +56,6 @@ var submitPressed = function() {
 
 var selectedGrave = function() {
   var graveList = document.getElementById("preferredGrave");
-  var selectGrave = graveList.options[graveList.selectedIndex].text;
+  var selectGrave = graveList.options[graveList.selectedIndex].value;
     return selectGrave;
 }
