@@ -45,7 +45,7 @@ $(document).ready(function() {
     }
   var generateCreatureDiv = function(Creatures) {
     //The div, 'questionDiv' will hold all of the info about the question
-    var creatureDiv = $("<div />");
+    var creatureDiv = $(".area");
 
 
     //Create a button that when pressed, will add question's answer to the div
@@ -53,6 +53,9 @@ $(document).ready(function() {
     creatureDiv.append(revealButton);
     revealButton.text("Display Selected");
     revealButton.click(function() {
+      $(creatureDiv).empty()
+      var generatedCreatureDiv = generateCreatureDiv(Creatures);
+      $(creatureDiv).append(generatedCreatureDiv)
       //Figure out which is the current creature
       for(x=0; x<Creatures.length;x++){
         if (Creatures[x].name==selectedCreature()){
@@ -66,6 +69,11 @@ $(document).ready(function() {
     creatureDiv.append(revealButton2);
     revealButton2.text("Display All");
     revealButton2.click(function(){
+      $(creatureDiv).empty()
+
+      var generatedCreatureDiv = generateCreatureDiv(Creatures);
+      creatureDiv.append(generatedCreatureDiv); 
+
       for(x=0; x<Creatures.length;x++){
         creatureDiv.append("<h2>" + Creatures[x].name + "</h2>");
         creatureDiv.append("<p></p><a href=\""+ Creatures[x].image+"\"> <img src=\""+ Creatures[x].image+"\" alt=\"\" width=\"250\" height=\"250\" align=\"middle\"></a>" +"<p>"+ Creatures[x].description+"</p>");
