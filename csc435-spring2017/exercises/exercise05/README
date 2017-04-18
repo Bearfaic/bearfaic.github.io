@@ -1,0 +1,6 @@
+In order to run this demo:
+
+1. Make sure you have a MySQL server running locally
+2. There needs to be a database named 'exercise05', with a table called 'users',
+  and in that table, there should be a column for 'username', 'password', 'band1', 'band2', and 'band3'.
+3. In your browser, load index.html from your localhost
