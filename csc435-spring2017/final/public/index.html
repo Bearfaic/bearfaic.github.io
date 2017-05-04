@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<div class="wrapper">
+<head>
+ <link rel="stylesheet" href="./stylesheet.css"/>
+  <meta charset="UTF-8">
+  <title>Socket.IO Chat Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class = "side_center">
+  <div id="logInDiv">
+    <h1>Create an Id</h1>
+    <form id="userIdForm" action="">
+      <input id="userIdInput" autocomplete="off" /><button>Send</button>
+    </form>
+  </div>
+</div>
+<div class = "side_center">
+  <div id="gameDiv" hidden>
+    <h1>Alright kid, we know you did it. Your partener already sold you out. Work with me, and we'll reduce your sentence.</h1>
+    <h2>Then, we'll hold on a minute and see if their story matches yours.</h2>
+    <form id="pleaForm" action="">
+    	<select type="submit" id="pleaInput"/>
+	  <option value="guilty">I'll tell you what I know.</option>
+	  <option value="not guilty">Eat dirt, copper!</option>
+	</select>
+	<button>Send</button>
+    </form>
+    <div id='waitingDiv' hidden>
+      <p>Waiting for collaborator</p>
+    </div>
+    <div id='resultsDiv' hidden>
+    </div>
+  </div>
+<div class = "side_center">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="./socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</div>
+</html>
