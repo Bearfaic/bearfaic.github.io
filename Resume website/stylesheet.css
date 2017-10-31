@@ -1,6 +1,6 @@
   html, body {
     margin: 0;
-  background: #545454;
+  background: rgb(82, 86, 89);
   font-family: Verdana
   height: 100%;
 }
@@ -18,7 +18,7 @@
 }
 .center_content { 
   width: 1000px;
-  margin-top: -400px;
+  margin-top: -600px;
   margin-left: 500px;
   color: #FFFFFF;
   font-family: sans-serif;
