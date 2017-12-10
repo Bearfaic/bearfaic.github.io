@@ -55,7 +55,9 @@ header h1 {
 }header h2 {
   color: #000000;
 }
-
+p{
+    text-align: left;
+}
 h1{
   color: #FFFFFF;
   font-family: sans-serif;
@@ -65,12 +67,8 @@ h2{
   color: #FFFFFF;
   font-family: sans-serif;
 }
-body{
-  min-height: 100%;
- }
-p{
-  color: #443369;
-}
+
+
 #text{
   color: #CC3030;
 }
@@ -88,7 +86,10 @@ a:hover {
 a h1:hover{
   color: black;
 }
-
+video{
+  margin: auto;
+  margin-left: 150px;
+}
 .side_center {
   margin: 0px auto;
   display: table;
@@ -107,4 +108,50 @@ a h1:hover{
   margin-right:auto;
   margin-top: 20px;
   text-align:center;
+}
+.button {
+  width: 200px;
+  background-color: #AAAAAA;
+  border: #AAAAAA;
+  color: black;
+  padding: 15px 32px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.button:hover { 
+  background-color: #FFFFFF;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 150px; /* Full-width */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #666666;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #666666;
+    cursor: pointer;
 }
