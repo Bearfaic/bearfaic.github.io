@@ -113,6 +113,7 @@ video.addEventListener("ended", function(){
 		video.src= myvids[0];
 		video.play();
 	}
+	buttonsWork= true;
 
 });
 // Pause the video when the slider handle is being dragged
