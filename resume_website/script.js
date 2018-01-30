@@ -65,7 +65,7 @@ fullScreenButton.addEventListener("click", function() {
   }
 });
 
-// Event listener for the seek bar
+	// Event listener for the seek bar
 seekBar.addEventListener("change", function() {
 	if (buttonsWork == true){
   		// Calculate the new time
